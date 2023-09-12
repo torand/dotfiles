@@ -1,6 +1,7 @@
 .git/
 .idea/
 init/
+.vim/
 .DS_Store
 .osx
 .editorconfig
@@ -12,6 +13,7 @@ init/
 .osx
 .screenrc
 .tmux.conf
+.vimrc
 bootstrap.sh
 .bootstrap-exclude
 brew.sh
