@@ -13,6 +13,12 @@ Thumbs.db
 .Spotlight-V100
 .Trashes
 
+# IntelliJ IDEA
 *.iml
 .idea
+
+# Java
 target
+
+# Node.js
+node_modules
