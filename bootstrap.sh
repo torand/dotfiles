@@ -5,27 +5,7 @@ cd "$(dirname "${BASH_SOURCE}")";
 git pull origin main;
 
 function doIt() {
-	rsync --exclude ".git/" \
-	  --exclude ".idea/" \
-	  --exclude "init/" \
-		--exclude ".DS_Store" \
-		--exclude ".osx" \
-		--exclude ".editorconfig" \
-		--exclude ".gdbinit" \
-		--exclude ".gitattributes" \
-		--exclude ".gitconfig" \
-		--exclude ".gvimrc" \
-		--exclude ".hgignore" \
-		--exclude ".inputrc" \
-		--exclude ".macos" \
-		--exclude ".osx" \
-		--exclude ".screenrc" \
-		--exclude ".tmux.conf" \
-		--exclude "bootstrap.sh" \
-		--exclude "brew.sh" \
-		--exclude "README.md" \
-		--exclude "LICENSE-MIT.txt" \
-		-avh --no-perms . ~;
+	rsync --exclude-from .bootstrap-exclude -avh --no-perms . ~;
 	source ~/.bash_profile;
 }
 
