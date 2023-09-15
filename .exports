@@ -45,5 +45,5 @@ export MAVEN_OPTS="-Xms1024m -Xmx4096m"
 
 export CLICOLOR=1
 
-export PATH="$HOME/bin:$JAVA_HOME/bin:$HOME/.gem/ruby/2.6.0/bin:$PATH"
+export PATH="$JAVA_HOME/bin:$HOME/.gem/ruby/2.6.0/bin:$PATH"
 
